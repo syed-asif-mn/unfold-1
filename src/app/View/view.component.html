@@ -1,5 +1,5 @@
 <div id="container">
-  <div id="header">Unfold.</div>
+  <div translate id="header">title</div>
   <div class="headings">Select frameworks to get started with!</div>
 
   <!-- Form starts -->
@@ -51,4 +51,8 @@
     </div>
   </form>
   <!-- Form ends -->
+  <div
+        *ngFor="let language of languages; let languageIndex=index;"
+      >
+  <button (click)= "changeLanguage(languageIndex)">{{language}}</button>
 </div>
