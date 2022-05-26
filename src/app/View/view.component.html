@@ -51,8 +51,10 @@
     </div>
   </form>
   <!-- Form ends -->
+  <div id="languageBar">
   <div
         *ngFor="let language of languages; let languageIndex=index;"
       >
-  <button (click)= "changeLanguage(languageIndex)">{{language}}</button>
+  <button class="languageButton" (click)= "changeLanguage(languageIndex)">{{language}}</button>
+  </div>
 </div>
